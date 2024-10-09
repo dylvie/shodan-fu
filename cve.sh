@@ -1,5 +1,6 @@
 #!/bin/bash
 #(c) Dylvie Shwartz 2024 - Dot not use it to harm
+#show information and exploits about a CVE
 
 if [[ ! $1 ]]; then
     echo "$0 <cve>"
