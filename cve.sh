@@ -16,4 +16,4 @@ echo -e "\e[35mnuclei template\e[0m: " `find ~/.local/nuclei-templates/code/cves
 echo -e "\e[35mexploitdb\e[0m"
 searchsploit $1
 echo -e "\e[35mmetasploit exploits\e[0m"
-msfconsole -q -x "search $1;exit"
+msfconsole -q -x "search $1; info 0; exit"
