@@ -22,7 +22,7 @@ if [[ $port ]]; then
                 ping -c 1 -W 3 $ip |
                         awk 'NR==4' |
                                 grep >/dev/null -v '100% packet loss' &&
-                                        (echo -n "$ip "; echo "https://$ip:$port" >>"$file")
+                                        (echo -n "$ip "; echo "https://$ip:$port" >>"$file");
         done
         echo -e "\n\e[32mWriting $file\e[0m"
 fi
