@@ -9,7 +9,7 @@ clear
 #use shodan filter to retrieve ips and filter honeypots
 #add search terms before \\-tag:honeypot
 #remove honeypots
-shodan search --fields ip --limit 100 --facets ip country:it \\-tag:honeypot |
+shodan search --fields ip_str --limit 100 --facets ip country:it \\-tag:honeypot |
         awk 'NR > 1 {print $1}' |
         sed '/^$/d' |
         while read ip; do
