@@ -8,7 +8,7 @@ clear
 #use shodan filter to retrieve ips and filter honeypots
 #add search terms before \\-tag:honeypot
 #remove honeypots
-shodan search --fields ip --limit 100 --facets ip \\-tag:honeypot port:445 vuln:ms17-010 country:it | 
+shodan search --fields ip_str --limit 100 --facets ip \\-tag:honeypot port:445 vuln:ms17-010 country:it | 
 	while read ip; do
 		export ip
 		#filter honeypots < 30 ports
