@@ -8,7 +8,7 @@ clear
 #use shodan filter to retrieve ips and filter honeypots
 #add search terms before \\-tag:honeypot
 #remove honeypots
-shodan search --fields ip --limit 100 country:us \\-tag:honeypot | 
+shodan search --fields ip_str --limit 100 country:us \\-tag:honeypot | 
         while read ip; do
 		#export ip to use in awk
                 export ip
