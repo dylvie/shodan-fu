@@ -11,7 +11,7 @@ Different scripts to use shodan command line for weaponizing tests.
 Examples:
 
 ```
-./shodan_ip.sh 'title:"USG FLEX 100","USG FLEX 100w","USG FLEX 200","USG FLEX 500","USG FLEX 700","USG FLEX 50","USG FLEX 50w","ATP100","ATP200","ATP500","ATP700"'[*] exec: /home/kali/shodan_ip.sh 'title:"USG FLEX 100","USG FLEX 100w","USG FLEX 200","USG FLEX 500","USG FLEX 700","USG FLEX 50","USG FLEX 50w","ATP100","ATP200","ATP500","ATP700"'
+./shodan_ip.sh 'title:"USG FLEX 100","USG FLEX 100w","USG FLEX 200","USG FLEX 500","USG FLEX 700","USG FLEX 50","USG FLEX 50w","ATP100","ATP200","ATP500","ATP700"'
 
 Top 10 Results for Facet: port
 443                               15,975
